@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: false # false (default), "![](img/me.png){:.circle.shadow}", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:

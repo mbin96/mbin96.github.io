@@ -1,81 +1,114 @@
 ---
 layout: article
-titles: 
-# @start locale config
-en      : &EN       HyeonJong Cho
-en-GB   : *EN
-en-US   : *EN
-en-CA   : *EN
-en-AU   : *EN
-zh-Hans : *EN
-zh      : *EN
-zh-CN   : *EN
-zh-SG   : *EN
-zh-Hant : *EN
-zh-TW   : *EN
-zh-HK   : *EN
-ko      : &KO       조현종
-ko-KR   : *KO
-fr      : *EN       
-fr-BE   : *EN
-fr-CA   : *EN
-fr-CH   : *EN
-fr-FR   : *EN
-fr-LU   : *EN
-# @end locale config
-key: page-about
+titles: 조현종 
+aside:
+  toc: true
+header:
+  theme: dark
+
 ---
+![](img/me.png){:.circle.shadow}
 
-
-![Image](img/me.png){:.circle}
-# 소개
-임베디드 부터 딥러닝까지 많은 컴퓨터 공학 분야에 관심을 가지고 공부하는 신입 개발지 입니다.
+# 조현종
+ 
+### 소개
+임베디드 부터 딥러닝까지 많은 컴퓨터 공학 분야에 관심을 가지고 공부하는 학부생 입니다.
 특히 최근에는 Computer Vision에 관심을 가지고, 영상처리, openCV, 딥러닝 등을 관심있게 공부하고 있습니다. 
 
-## Contract
-- mail : mbin96@gmail.com
-- Github : https://github.com/mbin96/
+### Contact
+- Mail : [mbin96@gmail.com](mailto://mbin96@gmail.com)
+- Github : <https://github.com/mbin96/>
+    
+### Education
+- 건국대학교 전기전자공학과 학부과정 재학중
+  - 2014-03 ~ 2021-02(졸업예정) 
 
-## Skills
+### Skills
 - C, C++ 
 - Python
 - Pytorch
 - Java
 - openCV
 - arm, avr 임베디드 프로그래밍
-- 리눅스 사용
-- git을 사용한 협업
+- 리눅스, git 활용
 
 # Project
 ## SuperResolution
+![Super resolution network X4](/img/srnet_sample.png)
+
+### 개요
 DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch 프레임워크를 이용하여 개인 프로젝트로 수행하였습니다. 기존 모델에 새로운 아이디어를 추가하여 기존 모델을 개선하는 방식으로 이루어졌습니다.  
+### 특징
+- 개인프로젝트
+- PyTorch 사용
+- 의료 영상 네트워크인 UNETPP를 베이스로 하여 CA, Back Projection등의 아이디어를 사용해 구성
+  - UNETPP 네트워크는 이미지의 크기를 작게 변형하여 학습하기 때문에 Global feature을 학습하는데에 적합함. 
+    
+![Super resolution network compatition](/img/srnet.png)
+해당 네트워크는 격자 무늬와 같이 Global feature가 두드러지는 반복되는 패턴에서 좋은 결과를 보여주었습니다.
+- Slide : [Link](https://1drv.ms/p/s!AvfXn2C0Rf2JhON2hb8XP4K9nC-qMg?e=Gv4geN)
 - 프로젝트 수행 기한 : 2020-01 ~ 2020-06  
-## OOAD toy project *Object Oriented Analysis and Design*
-객체지향 언어의 협업 개발방법론을 익히기 위한 4인 토이 프로젝트입니다. 알람, 세계시간, 타이머, 스탑워치등의 기능을 가진 시계를 구현하는것이 목표로, 개발시 UML을 기반으로 수행하였습니다.
-
-빌드 단계에서 다음과 같은 환경에서 수행되었습니다.
-- Java8
-- Junit
-- Sonacube
-- Jenkins
-- Git
-- Notion (for Issue Tracking)
-- Microsoft Teams
-
-위 환경은 SQA를 담당하는 학생이 구성하여 주었고, 저희는 위 환경에서 개발을 수행하였습니다.
+    
+## OOAD & UML toy project *(Object Oriented Analysis and Design)*
+![](/img/ooad.png)
+### 개요
+객체지향 언어의 협업 개발방법론을 익히기 위한 토이 프로젝트입니다. 알람, 세계시간, 타이머, 스탑워치등의 기능을 가진 시계를 구현하는것이 목표로, 개발시 UML을 기반으로 수행하였습니다.
+### 특징
+- 4인 팀 프로젝트
+- 애자일 프로세스
+- Planning, Analysis, Design, Implementation & Unit Test, System Testing 로 구성
+- UML 다이어그램을 이용하여 UseCase, Sequence Diagram, 도메인 모델등 구성
+- Implementation은 다음과 같은 환경에서 수행되었습니다.
+  - Java8
+  - Junit
+  - Sonacube
+  - Jenkins
+  - Git
+  - Notion (for Issue Tracking)
+    
+코로나 시국에 대면으로 프로젝트를 수행하는데 어려움이 있었으나, Microsoft Teams와 Git의 적극적인 활용으로 원격에서 효율적으로 협업하는 방식을 익힐 수 있었습니다. 4인이서 매일매일 teams를 사용해 할일을 나누고 그때그때 github에 커밋하며 진행하였습니다.   
+평소 디자인에 관심이 많아 제가 UI 직접 디자인하였고, 사용자가 어떤버튼이 무슨일을 할지 예측 가능한 UX를 만들기 위해 팀원간에 많은 논의가 있었습니다. 
+- Doc : [Link](https://drive.google.com/drive/folders/1poVJCUSLcbhl0wb8AXnfopp3gs7mR5UY?usp=sharing)
+- Github : <https://github.com/mbin96/OOAD-project>
 - 프로젝트 수행 기한 : 2020-04 ~ 2020-06  
+    
 ## IP camera Solution on EMPOSIII Embedded board
-EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서 ip 카메라솔루션을 3인이서 구현하였습니다.
+![](/img/ipcam_pc.png)![](/img/ipcam_smart.png)
+### 개요
+EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서 ip 카메라 솔루션을 구현하였습니다. 보드의 카메라 모듈에서 얻은 이미지를 실시간으로 웹브라우저에서 확인, 클라이언트 프로그램에서 녹화등이 가능합니다.
+### 특징
+- 3인 팀 프로젝트
+- 서버 사이드 (EMPOSIII) 
+  - 임베디드 리눅스 기반 
+  - 카메라 모듈에서 RGB값을 받아오는 디바이스 드라이버
+  - RGB raw 데이터를 전처리 하고 jpeg로 압축해 비디오 스트림으로 보내는 소켓 프로그래밍
+  - 그외 jpeg 라이브러리등의 크로스컴파일
+- 클라이언트 (x86)
+  - openCV를 이용해 서버의 비디오 스트림을 이용해 얼굴감지, 움직임감지시 녹화 기능 구현.    
+     
+리눅스에 익숙한 사람이 조원 중 저 혼자고 다른 팀원은 리눅스가 처음이라 프로젝트를 진행하는데 어려움이 많았으나, 다른 조원과 많은 대화를 나누며 제가 아는것을 가르쳐 주고 서로 할수있는 영역을 잘 나누어 협업하였습니다.   
+비디오 스트림으로 저성능 하드웨어에 알맞은 mjpeg를 사용하여 브라우저에서 볼 수 있게 하는 것이 목표 였는데, 인터넷상의 코드는 파이썬을 이용하는게 대부분이고 C를 이용한 코드가 없어서 소켓 프로그래밍으로 직접 구현했어야 했습니다. mjpeg mime가 제대로 서술된 문서가 없어 고생하였으나 포기하지않고 수 일간의 구글링과 테스트를 통해 mjpeg를 정확히 구현 하였습니다.
+- Doc : [Link](https://github.com/mbin96/embedded_sys/blob/master/readme_report.pdf)
+- Github : <https://github.com/mbin96/embedded_sys>
 - 프로젝트 수행 기한 : 2019-11 ~ 2019-12  
+     
 ## Live Face AR Sticker
-실시간 얼굴인식 AR 스티커 입니다. OpenCV, C++, Qt를 이용하였습니다. 
+<video src="/img/horizen.mp4" loop="" autoplay="" muted="" width="400" ></video><video src="/img/port.mp4" loop="" autoplay="" muted="" width="400" ></video>
+### 개요
+Landmark를 이용한 실시간 얼굴인식 AR 스티커 입니다. OpenCV, C++, Qt를 이용하였습니다. 
+
+- Slide : [Link](https://docs.google.com/presentation/d/1sdEeZsQqIeRcD8_eaUN4hoxaBrsw8dIIm4W8ffJyLAw/edit?usp=sharing)
 - 프로젝트 수행 기한 : 2019-12  
   
 ## Convolution Optimize with Convolution Ip
+### 개요
 
 ## Raw Image Preprocessing for AlexNet
-랩에 학부 연구생으로 근무하며 진행한 프로젝트입니다. Xilinx 사의 보드로 수행되었습니다.
-- 프로젝트 수행 기한 : 2019-11 ~ 2019-12  
+### 개요
+랩에 학부 연구생으로 근무하며 진행한 프로젝트입니다. Xilinx 사의 보드로 수행되었습니다. 기존 camera to hdmi 프로젝트를 이용하여 카메라 이미지를 AlexNet에 맞게 전처리하고, 
+- 프로젝트 수행 기한 : 2019-07 ~ 2019-08  
 
-## CNN Optimize for  
-
+## CNN Optimize for arm A8 processor
+### 개요
+CNN의 연산을 microprocesor에 최적화하는 프로젝트 입니다. microprocessor의 캐시와 레지스터를 고려하여 최대한 빠른 연산이 가능하도록 코드를 수정하였습니다.  
+- 프로젝트 수행 기한 : 2019-06
