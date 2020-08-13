@@ -42,7 +42,7 @@ DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch
 - 개인프로젝트
 - PyTorch 사용
 - 의료 영상 네트워크인 UNETPP를 베이스로 하여 CA, Back Projection등의 아이디어를 사용해 구성
-  - UNETPP 네트워크는 이미지의 크기를 작게 변형하여 학습하기 때문에 Global feature을 학습하는데에 적합함. 
+  - UNETPP 네트워크는 이미지의 크기를 작게 변형하여 학습하기 때문에 Global feature을 학습하는데에 적합함 
     
 ![Super resolution network compatition](/img/srnet.png)
 해당 네트워크는 격자 무늬와 같이 Global feature가 두드러지는 반복되는 패턴에서 좋은 결과를 보여주었습니다.
@@ -51,8 +51,10 @@ DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch
     
 ## OOAD & UML toy project *(Object Oriented Analysis and Design)*
 ![](/img/ooad.png)
+![](/img/ooad_use.png)
+![](/img/ooad_class.png)
 ### 개요
-객체지향 언어의 협업 개발방법론을 익히기 위한 토이 프로젝트입니다. 알람, 세계시간, 타이머, 스탑워치등의 기능을 가진 시계를 구현하는것이 목표로, 개발시 UML을 기반으로 수행하였습니다.
+객체지향 언어의 협업 개발방법론을 익히기 위한 토이 프로젝트입니다. 알람, 세계시간, 타이머, 스탑워치등의 기능을 가진 시계를 구현하는것이 목표로, 개발시 UML을 기반으로 수행하였습니다. 현업에서의 개발 프로세스를 체험할 수 있었던 프로젝트로 여러 인원과의 협업, 개발 프로세스, 객체지향 개념 확립, git 사용 등을 익혔습니다.
 ### 특징
 - 4인 팀 프로젝트
 - 애자일 프로세스
@@ -75,7 +77,7 @@ DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch
 ## IP camera Solution on EMPOSIII Embedded board
 ![](/img/ipcam_pc.png)![](/img/ipcam_smart.png)
 ### 개요
-EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서 ip 카메라 솔루션을 구현하였습니다. 보드의 카메라 모듈에서 얻은 이미지를 실시간으로 웹브라우저에서 확인, 클라이언트 프로그램에서 녹화등이 가능합니다.
+EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서 ip 카메라 솔루션을 구현하였습니다. 보드의 카메라 모듈에서 얻은 이미지를 실시간으로 웹브라우저에서 확인, 클라이언트 프로그램에서 녹화등이 가능합니다. 리눅스에서의 개발과 리눅스 시스템 이해에 많은 도움이 되었습니다.
 ### 특징
 - 3인 팀 프로젝트
 - 서버 사이드 (EMPOSIII) 
@@ -93,22 +95,25 @@ EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서
 - 프로젝트 수행 기한 : 2019-11 ~ 2019-12  
      
 ## Live Face AR Sticker
-<video src="/img/horizen.mp4" loop="" autoplay="" muted="" width="400" ></video><video src="/img/port.mp4" loop="" autoplay="" muted="" width="400" ></video>
+<video src="/img/horizen.mp4" loop="" autoplay="" muted="" width="400" ></video><video src="/img/port.mp4" loop="" autoplay="" muted="" width="400" ></video>   
 ### 개요
-Landmark를 이용한 실시간 얼굴인식 AR 스티커 입니다. OpenCV, C++, Qt를 이용하였습니다. 
-
+Head Pose Estimation을 이용한 실시간 얼굴인식 AR 스티커 입니다. 
+### 특징
+- C++, OpenCV4, Qt5, [sdm Head Pose Estimation](https://github.com/chengzhengxin/sdm) 이용
+- 위 영상과 같이 수직 수평에서 얼굴의 회전을 감지하고, 얼굴의 앞면에 정확하게 스티커를 합성
 - Slide : [Link](https://docs.google.com/presentation/d/1sdEeZsQqIeRcD8_eaUN4hoxaBrsw8dIIm4W8ffJyLAw/edit?usp=sharing)
 - 프로젝트 수행 기한 : 2019-12  
   
-## Convolution Optimize with Convolution Ip
+## Camera Image Preprocessing for AlexNet
 ### 개요
-
-## Raw Image Preprocessing for AlexNet
-### 개요
-랩에 학부 연구생으로 근무하며 진행한 프로젝트입니다. Xilinx 사의 보드로 수행되었습니다. 기존 camera to hdmi 프로젝트를 이용하여 카메라 이미지를 AlexNet에 맞게 전처리하고, 
+건국대학교 SoC Design 랩에 학부 연구생으로 근무하며 진행한 프로젝트입니다. 카메라 이미지를 인터럽트로 가져와 AlexNet에 맞게 전처리하고, AlexNet의 Classification 결과를 시리얼로 확인할수 있게 하였습니다. 
+### 특징
+- Xilinx Zybo 보드 사용
+- 카메라 모듈 데이터를 AlexNet에 맞춰 크롭, 리사이즈, 노말라이즈 등 전처리 작업 수행
+- hdmi를 통해 해당 인풋 이미지를 확인하고, AlexNet의 결과를 시리얼로 출력
 - 프로젝트 수행 기한 : 2019-07 ~ 2019-08  
-
-## CNN Optimize for arm A8 processor
+    
+## CNN Optimize for Embedded System
 ### 개요
-CNN의 연산을 microprocesor에 최적화하는 프로젝트 입니다. microprocessor의 캐시와 레지스터를 고려하여 최대한 빠른 연산이 가능하도록 코드를 수정하였습니다.  
+임베디드 Xilinx Zybo 보드에서 CNN의 연산을 microprocesor에 최적화하는 프로젝트 입니다. microprocessor의 캐시와 레지스터를 고려하여 최대한 빠른 연산이 가능하도록 unrolling, tiling등의 코드 최적화와 Neon 등의 기법을 이용하였습니다. 연산 시간이 AlexNet기준 4400ms에서 550ms 정도로 약 8배가량 감소하였습니다.
 - 프로젝트 수행 기한 : 2019-06
