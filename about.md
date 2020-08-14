@@ -47,7 +47,7 @@ aside:
 DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch 프레임워크를 이용하여 개인 프로젝트로 수행하였습니다. 기존 모델에 새로운 아이디어를 추가하여 기존 모델을 개선하는 방식으로 이루어졌습니다.  
 
 <details>
-<summary>자세히</summary>
+<summary><span style="color:red">더 읽어보기</span></summary>
 <div markdown="1">
 
 #### 특징
@@ -73,7 +73,7 @@ DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch
 객체지향 언어의 협업 개발방법론을 익히기 위한 토이 프로젝트입니다. 알람, 세계시간, 타이머, 스탑워치등의 기능을 가진 시계를 구현하는것이 목표로, 개발시 **UML을 기반으로** 수행하였습니다. 현업에서의 개발 프로세스를 체험할 수 있었던 프로젝트로 **여러 인원과의 협업, UML 다이어그램을 활용한 개발 프로세스, 객체지향 개념 확립, git 사용** 등을 익혔습니다.
 
 <details>
-<summary>자세히</summary>
+<summary><span style="color:red">더 읽어보기</span></summary>
 <div markdown="1">
 ![](/img/ooad_use.png)
 ![](/img/ooad_class.png)
@@ -108,7 +108,7 @@ DeepLearning을 이용한 이미지 해상도 개선 프로젝트로서, Pytorch
 EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서 ip 카메라 솔루션을 구현하였습니다. 보드의 카메라 모듈에서 얻은 이미지를 실시간으로 웹브라우저에서 확인, 클라이언트 프로그램에서 녹화등이 가능합니다. **리눅스에서의 개발과 리눅스 시스템 이해, 로우레벨에서의 영상처리**에 많은 도움이 되었습니다.
 
 <details>
-<summary>자세히</summary>
+<summary><span style="color:red">더 읽어보기</span></summary>
 <div markdown="1">
 #### 특징
 - 3인 팀 프로젝트
@@ -135,7 +135,7 @@ EMPOSIII 라는 arm11 프로세서를 사용하는 임베디드 보드 상에서
 #### 개요
 Head Pose Estimation을 이용한 실시간 얼굴인식 AR 스티커 입니다. **OpenCV를 이용한 영상처리**와 Qt 라이브러리를 통한 Gui를 실습하였습니다.
 <details>
-<summary>자세히</summary>
+<summary><span style="color:red">더 읽어보기</span></summary>
 <div markdown="1">
 #### 특징
 - C++, OpenCV4, Qt5, [sdm Head Pose Estimation](https://github.com/chengzhengxin/sdm) 이용
@@ -152,7 +152,7 @@ Head Pose Estimation을 이용한 실시간 얼굴인식 AR 스티커 입니다.
 #### 개요
 건국대학교 SoC Design 랩에 학부 연구생으로 근무하며 진행한 프로젝트입니다. 임베디드 보드에서 카메라 이미지를 인터럽트로 가져와 AlexNet에 맞게 전처리하고, AlexNet의 Classification 결과를 시리얼로 확인할수 있게 하였습니다. **arm 프로세서에 대한 이해, 특히 amba bus에 대해 깊게 학습** 하였습니다.
 <details>
-<summary>자세히</summary>
+<summary><span style="color:red">더 읽어보기</span></summary>
 <div markdown="1">
 #### 특징
 - Xilinx Zybo 보드 사용
