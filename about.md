@@ -1,6 +1,6 @@
 ---
 layout: article
-titles: 조현종 
+titles: Portfolio
 aside:
   toc: true
 
