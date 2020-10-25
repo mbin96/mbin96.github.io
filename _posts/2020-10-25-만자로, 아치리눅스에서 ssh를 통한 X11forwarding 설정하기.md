@@ -48,3 +48,6 @@ $ systemctl restart sshd
 이제 서버에서의 설정은 끝났다.
 ## client side
 클라이언트에선 별다른 설정은 필요없다. ssh에 접속할때, -X 옵션을 추가하여 실행하면 된다.
+## ref
+https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding
+https://unix.stackexchange.com/questions/12755/how-to-forward-x-over-ssh-to-run-graphics-applications-remotely
