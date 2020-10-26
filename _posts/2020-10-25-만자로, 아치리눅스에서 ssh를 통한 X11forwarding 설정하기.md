@@ -35,7 +35,8 @@ X11Forwarding yes
 X11UseLocalhost yes
 AllowTcpForwarding yes
 ```
-`:wq`로 저장하고, sshd를 재시작 한다
+`:wq`로 저장한다.
+### sshd를 재시작
 cent의경우
 ```bash
 $ sudo /etc/init.d/sshd reload
@@ -44,6 +45,9 @@ arch의 경우
 ```bash
 $ systemctl restart sshd
 ```
-
+이제 서버에서의 설정은 끝났다.
 ## client side
 클라이언트에선 별다른 설정은 필요없다. ssh에 접속할때, -X 옵션을 추가하여 실행하면 된다.
+## ref
+https://wiki.archlinux.org/index.php/OpenSSH#X11_forwarding
+https://unix.stackexchange.com/questions/12755/how-to-forward-x-over-ssh-to-run-graphics-applications-remotely
