@@ -15,7 +15,7 @@ see https://en.wikipedia.org/wiki/Epipolar_geometry
 기본적으로, stereovision은 [**epopolar geometry**](https://en.wikipedia.org/wiki/Epipolar_geometry)를 통해 얻게 됨. 픽셀좌표계에서의 시차를 이용해서 계산하는 방법. 사람눈이랑 비슷
 
 
-![epipolar geometry](../img/2023-08-04/Epipolar_geometry.svg)
+![epipolar geometry](/img/2023-08-04/Epipolar_geometry.svg)
 
 ## epipole 혹은 epipolar point 
 두 카메라 렌즈의 optical center(핀홀 모델에서의 핀홀) $O_L$과 $O_R$을 선분으로 이으면 현재 카메라와 상대 카메라의 이미지 평면중 각각 다른 한 지점에 투사되게 되어있음. 이점이 각각 $e_L$ 과 $e_R$ 임. 이를 epipole 혹은 epipolar point 라고 함.
