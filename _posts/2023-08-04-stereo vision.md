@@ -72,10 +72,14 @@ opencv 나 많은 stereovision 관련 문서들을 보면 대부분 카메라를
 ## 카메라 두대에서 이미 intrinsic extrinsic이 구해져있는경우
 stereoCalibrate() 함수를 이용 할 수 없다고 가정하면, 카메라 1 을 기준으로 카메라 2로 회전 이동하는 R, T를 별도로 구해서 stereoRectify()에 입력해줘야한다.
 카메라1, 카메라2의 rotation matrix $R_1, R_2$, Translation vector $T_1, T_2$가 있을때 다음과 같이 성립된다.
+
+
 $$\begin{matrix}
     R_2&=&RR_1 \\
     T_2&=&RT_1 + T
 \end{matrix}$$
+
+이므로
 
 $$\begin{matrix}
     R&=&R_2R_1^{-1}\\
